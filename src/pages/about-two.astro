@@ -34,14 +34,14 @@ import Layout from '../layouts/Layout.astro'
         </div>
     </section>
     <section>
-        <div class="relative isolate px-6 pb-32 pt-14 md:pb-12 lg:px-8 lg:pb-8">
+        <div class="relative isolate px-6 pb-32 pt-14 md:pb-12">
             <div
                 class="= absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden sm:inset-x-4"
                 aria-hidden="true"
             >
                 <div
-                    class="bg-image h-[500px] bg-cover bg-center"
-                    style="background-image: url('https://images.pexels.com/photos/17464067/pexels-photo-17464067/free-photo-of-woman-face-in-sunglasses.jpeg');"
+                    class="bg-image h-[500px] bg-cover bg-center 2xl:bg-black 2xl:bg-auto 2xl:bg-no-repeat"
+                    style="background-image: url('https://source.unsplash.com/yXDmgBEvz78');"
                 >
                     <!-- Content over the image goes here -->
                 </div>
@@ -56,7 +56,7 @@ import Layout from '../layouts/Layout.astro'
                 <h1
                     class="title-font mb-4 text-2xl font-medium text-gray-900 sm:text-3xl lg:mb-0 lg:w-1/3"
                 >
-                    Journey in Frames: Discover My Gallery
+                    Journey Through Frames: Discover My Gallery
                 </h1>
                 <p class="mx-auto text-base leading-relaxed lg:w-2/3 lg:pl-6">
                     Embark on an Enchanting Visual Odyssey: Delve into the Heart
@@ -65,9 +65,9 @@ import Layout from '../layouts/Layout.astro'
                     Weave our Journey.
                 </p>
             </div>
-            <div class="-m-1 flex flex-wrap md:-m-2">
-                <div class="flex w-1/2 flex-wrap">
-                    <div class="w-1/2 p-1 md:p-2">
+            <div class="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4">
+                <div class="flex flex-wrap">
+                    <div class="w-full p-1 md:p-2">
                         <img
                             alt="gallery"
                             class="block h-full w-full object-cover object-center"
@@ -81,7 +81,7 @@ import Layout from '../layouts/Layout.astro'
                             src="https://dummyimage.com/501x301"
                         />
                     </div>
-                    <div class="w-full p-1 md:p-2">
+                    <div class="w-1/2 p-1 md:p-2">
                         <img
                             alt="gallery"
                             class="block h-full w-full object-cover object-center"
@@ -89,8 +89,8 @@ import Layout from '../layouts/Layout.astro'
                         />
                     </div>
                 </div>
-                <div class="flex w-1/2 flex-wrap">
-                    <div class="w-full p-1 md:p-2">
+                <div class="flex flex-wrap">
+                    <div class="w-1/2 p-1 md:p-2">
                         <img
                             alt="gallery"
                             class="block h-full w-full object-cover object-center"
@@ -104,11 +104,11 @@ import Layout from '../layouts/Layout.astro'
                             src="https://dummyimage.com/502x302"
                         />
                     </div>
-                    <div class="w-1/2 p-1 md:p-2">
+                    <div class="w-full p-1 md:p-2">
                         <img
                             alt="gallery"
                             class="block h-full w-full object-cover object-center"
-                            src="https://dummyimage.com/503x303"
+                            src="https://dummyimage.com/500x300"
                         />
                     </div>
                 </div>
