@@ -1,22 +1,102 @@
 ---
 const pages = [
-  {"title": "Home", "link": "/"},
-  {"title": "About", "link": "/about"},
-  {"title": "Gallery", "link": "/gallery"},
-  {"title": "Contact", "link": "/contact"}
+    { title: 'Home', link: '/' },
+    { title: 'About', link: '/about' },
+    { title: 'Gallery', link: '/gallery' },
+    { title: 'Contact', link: '/contact' },
 ]
-
 ---
 
-<header class="text-gray-600 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-       <img src="/logoipsum.svg" />
-      </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        {pages.map((data) => <a href={data.link} class="mr-5 hover:text-gray-900">{data.title}</a>)}
-      </nav>
-      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">1-800-000-0000
-      </button>
+<header class="body-font text-gray-600">
+    <div
+        class="flex flex-row justify-between p-5 sm:container sm:mx-auto sm:flex-col sm:flex-wrap sm:items-center md:flex-row"
+    >
+        <a
+            class="title-font mb-4 flex items-center font-medium text-gray-900 md:mb-0"
+        >
+            <img src="/logoipsum.svg" alt="Logo" />
+        </a>
+        <!-- Laptop and Tablet Navbar -->
+        <nav
+            class="hidden sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:text-base md:ml-auto"
+        >
+            {
+                pages.map((data) => (
+                    <a href={data.link} class="mr-5 hover:text-gray-900">
+                        {data.title}
+                    </a>
+                ))
+            }
+        </nav>
+
+        <button
+            class="mt-4 hidden items-center rounded border-0 bg-gray-100 px-3 py-1 text-base hover:bg-gray-200 focus:outline-none md:mt-0 md:inline-flex"
+        >
+            1-800-000-0000
+        </button>
+        <!-- Mobile Nav button -->
+        <button
+            id="mobile-btn"
+            class="block hover:text-gray-900 sm:hidden sm:rounded sm:px-3 sm:py-2 sm:text-gray-500"
+        >
+            <svg
+                class="block h-6 w-6 sm:hidden"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <title>Mobile Menu</title>
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
     </div>
-  </header>
+    <!-- Mobile Menu -->
+    <div
+        id="mobile-menu"
+        class="block h-0 w-full p-3 text-right transition-all duration-500 ease-out md:hidden"
+    >
+        <!-- Mobile Menu Content -->
+        <nav
+            id="nav-content"
+            class="mx-4 mt-0 hidden flex-col space-y-4 bg-white transition-all duration-500 ease-in sm:hidden"
+        >
+            {
+                pages.map((data) => (
+                    <a
+                        href={data.link}
+                        class="px-4 py-2 text-lg font-semibold text-gray-900 hover:bg-gray-100 "
+                    >
+                        {data.title}
+                    </a>
+                ))
+            }
+        </nav>
+    </div>
+</header>
+
+<script>
+    const mobileMenu = document.getElementById('mobile-menu')
+    const mobileContent = document.getElementById('nav-content')
+    const mobileNavBtn = document.getElementById('mobile-btn')
+
+    const toggleClasses = [
+        { element: mobileMenu, classToAdd: 'h-64', classToRemove: 'h-0' },
+        { element: mobileContent, classToAdd: 'flex', classToRemove: 'hidden' },
+    ]
+
+    const toggleMenu = () => {
+        toggleClasses.forEach(({ element, classToAdd, classToRemove }) => {
+            if (element !== null) {
+                element.classList.toggle(classToRemove)
+                element.classList.toggle(classToAdd)
+            }
+        })
+    }
+
+    mobileNavBtn?.addEventListener('click', toggleMenu)
+</script>
