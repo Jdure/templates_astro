@@ -12,7 +12,7 @@ The following pages will be created for each:
 -   About/About Us (w/Testimonials)
     -   [x] Small business 1
     -   [] Small business 2
-    -   [] Freelancer 1
+    -   [x] Freelancer 1
     -   [] Freelancer 2
 -   Services
     -   [] Small business 1
