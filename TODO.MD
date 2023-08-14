@@ -11,24 +11,20 @@ The following pages will be created for each:
 
 -   About/About Us (w/Testimonials)
     -   [x] Small business 1
-    -   [] Small business 2
+    -   [x] Small business 2
     -   [x] Freelancer 1
     -   [] Freelancer 2
 -   Services
-    -   [] Small business 1
-    -   [] Small business 2
-    -   [] Freelancer 1
-    -   [] Freelancer 2
+    -   [] Small business
+    -   [] Freelancer
 -   Portfolio / Gallery
     -   [] Small business 1
     -   [] Small business 2
     -   [] Freelancer 1
     -   [] Freelancer 2
 -   Contact Us (w/FAQ)
-    -   [] Small business 1
-    -   [] Small business 2
-    -   [] Freelancer 1
-    -   [] Freelancer 2
+    -   [] Small business
+    -   [] Freelancer
 
 There should be at least 2-3 templates for each of these pages.
 

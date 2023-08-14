@@ -10,9 +10,7 @@ import Layout from '../layouts/Layout.astro'
                 class="items-center sm:flex sm:items-center sm:justify-between"
             >
                 <div class="text-center sm:text-left">
-                    <h1
-                        class="text-base font-bold text-gray-900 sm:text-base md:text-lg"
-                    >
+                    <h1 class="text-3xl font-bold capitalize sm:text-4xl">
                         About Me
                     </h1>
                     <div
@@ -27,8 +25,18 @@ import Layout from '../layouts/Layout.astro'
                 <div
                     class="mt-4 hidden gap-4 sm:mr-4 sm:mt-0 sm:flex sm:w-5 sm:flex-row sm:items-center"
                 >
-                    <input type="image" src="instagram.svg" alt="Instragram" />
-                    <input type="image" src="tiktok.svg" alt="Tik Tok" />
+                    <input
+                        class="transition duration-300 hover:scale-150"
+                        type="image"
+                        src="instagram.svg"
+                        alt="Instragram"
+                    />
+                    <input
+                        class="transition duration-300 hover:scale-150"
+                        type="image"
+                        src="tiktok.svg"
+                        alt="Tik Tok"
+                    />
                 </div>
             </div>
         </div>
@@ -40,8 +48,8 @@ import Layout from '../layouts/Layout.astro'
                 aria-hidden="true"
             >
                 <div
-                    class="bg-image 3xl:h-[720px] h-[500px] bg-cover bg-center"
-                    style="background-image: url('https://source.unsplash.com/yXDmgBEvz78');"
+                    class="bg-image h-[500px] max-w-screen-xl bg-cover bg-center lg:bg-top xl:mx-auto"
+                    style="background-image: url('https://source.unsplash.com/VTMzCFls1f0');"
                 >
                     <!-- Content over the image goes here -->
                 </div>
@@ -49,12 +57,99 @@ import Layout from '../layouts/Layout.astro'
             <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56"></div>
         </div>
     </section>
+
+    <!-- About Content -->
+
+    <section>
+        <div
+            class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
+        >
+            <div class="max-w-3xl">
+                <h2 class="text-3xl font-bold capitalize sm:text-4xl">
+                    I am a woman phoenomenally. Phoenomenally women that's me.
+                </h2>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+                <div class="relative h-64 overflow-hidden sm:h-80 lg:h-full">
+                    <img
+                        alt="Persona taking a picture"
+                        src="https://source.unsplash.com/DokE5D4GbDk"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+                </div>
+
+                <div class="lg:py-16">
+                    <article class="space-y-4 text-black">
+                        <p
+                            class="font text-xl font-semibold capitalize leading-relaxed sm:text-2xl"
+                        >
+                            Hi, I'm Phoebe
+                        </p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Aut qui hic atque tenetur quis eius quos ea
+                            neque sunt, accusantium soluta minus veniam tempora
+                            deserunt? Molestiae eius quidem quam repellat.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Dolorum explicabo quidem voluptatum voluptas
+                            illo accusantium ipsam quis, vel mollitia? Vel
+                            provident culpa dignissimos possimus, perferendis
+                            consectetur odit accusantium dolorem amet voluptates
+                            aliquid, ducimus tempore incidunt quas. Veritatis
+                            molestias tempora distinctio voluptates sint! Itaque
+                            quasi corrupti, sequi quo odit illum impedit!
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote/Mission Statement -->
+
+    <section class="body-font bg-neutral-50 text-black">
+        <div class="container mx-auto px-5 py-24">
+            <div class="mx-auto w-full text-center lg:w-3/4 xl:w-1/2">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="mb-8 inline-block h-8 w-8 text-gray-400"
+                    viewBox="0 0 975.036 975.036"
+                >
+                    <path
+                        d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                    ></path>
+                </svg>
+                <p
+                    class="text-xl font-semibold capitalize italic leading-relaxed sm:text-2xl"
+                >
+                    I would like to be known as an intelligent woman, a
+                    courageous woman, a loving woman, a woman who teaches by
+                    being
+                </p>
+                <span
+                    class="mb-6 mt-8 inline-block h-1 w-10 rounded bg-gray-500"
+                ></span>
+                <h2
+                    class="title-font text-sm font-medium tracking-wider text-gray-900 lg:text-base"
+                >
+                    Maya Angelou
+                </h2>
+                <p class="text-gray-500">Poet</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Gallery -->
     <section class="body-font text-gray-600">
         <div class="container mx-auto flex flex-wrap px-5 py-24">
             <div class="mb-20 flex w-full flex-wrap">
                 <h1
-                    class="title-font mb-4 text-2xl font-medium text-gray-900 sm:text-3xl lg:mb-0 lg:w-1/3"
+                    class="title-font mb-4 text-3xl font-bold capitalize text-gray-900 sm:text-4xl lg:mb-0 lg:w-1/3"
                 >
                     Journey Through Frames: Discover My Gallery
                 </h1>
@@ -66,49 +161,79 @@ import Layout from '../layouts/Layout.astro'
                 </p>
             </div>
             <div class="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4">
-                <div class="flex flex-wrap">
-                    <div class="w-full p-1 md:p-2">
+                <div class="flex cursor-pointer flex-wrap">
+                    <div
+                        class="w-1/2 transform p-1 transition duration-300 hover:scale-75 md:p-2"
+                    >
                         <img
                             alt="gallery"
                             class="block h-full w-full object-cover object-center"
-                            src="https://dummyimage.com/500x300"
+                            src="https://dummyimage.com/500x500"
                         />
                     </div>
-                    <div class="w-1/2 p-1 md:p-2">
+                    <div
+                        class="w-1/2 transform p-1 transition duration-300 hover:scale-75 md:p-2"
+                    >
                         <img
                             alt="gallery"
                             class="block h-full w-full object-cover object-center"
-                            src="https://dummyimage.com/501x301"
+                            src="https://dummyimage.com/500x500"
                         />
                     </div>
-                    <div class="w-1/2 p-1 md:p-2">
+                    <div
+                        class="w-1/2 transform p-1 transition duration-300 hover:scale-75 md:p-2"
+                    >
                         <img
                             alt="gallery"
                             class="block h-full w-full object-cover object-center"
-                            src="https://dummyimage.com/600x360"
+                            src="https://dummyimage.com/500x500"
+                        />
+                    </div>
+                    <div
+                        class="w-1/2 transform p-1 transition duration-300 hover:scale-75 md:p-2"
+                    >
+                        <img
+                            alt="gallery"
+                            class="block h-full w-full object-cover object-center"
+                            src="https://dummyimage.com/500x500"
                         />
                     </div>
                 </div>
-                <div class="flex flex-wrap">
-                    <div class="w-1/2 p-1 md:p-2">
+                <div class="flex cursor-pointer flex-wrap">
+                    <div
+                        class="w-1/2 transform p-1 transition duration-300 hover:scale-75 md:p-2"
+                    >
                         <img
                             alt="gallery"
                             class="block h-full w-full object-cover object-center"
-                            src="https://dummyimage.com/601x361"
+                            src="https://dummyimage.com/500x500"
                         />
                     </div>
-                    <div class="w-1/2 p-1 md:p-2">
+                    <div
+                        class="w-1/2 transform p-1 transition duration-300 hover:scale-75 md:p-2"
+                    >
                         <img
                             alt="gallery"
                             class="block h-full w-full object-cover object-center"
-                            src="https://dummyimage.com/502x302"
+                            src="https://dummyimage.com/500x500"
                         />
                     </div>
-                    <div class="w-full p-1 md:p-2">
+                    <div
+                        class="w-1/2 transform p-1 transition duration-300 hover:scale-75 md:p-2"
+                    >
                         <img
                             alt="gallery"
                             class="block h-full w-full object-cover object-center"
-                            src="https://dummyimage.com/500x300"
+                            src="https://dummyimage.com/500x500"
+                        />
+                    </div>
+                    <div
+                        class="w-1/2 transform p-1 transition duration-300 hover:scale-75 md:p-2"
+                    >
+                        <img
+                            alt="gallery"
+                            class="block h-full w-full object-cover object-center"
+                            src="https://dummyimage.com/500x500"
                         />
                     </div>
                 </div>
