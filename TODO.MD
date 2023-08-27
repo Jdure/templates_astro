@@ -13,7 +13,7 @@ The following pages will be created for each:
     -   [x] Small business 1
     -   [x] Small business 2
     -   [x] Freelancer 1
-    -   [] Freelancer 2
+    -   [x] Freelancer 2 (w/Testimonials)
 -   Services
     -   [] Small business
     -   [] Freelancer
