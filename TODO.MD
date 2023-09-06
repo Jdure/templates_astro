@@ -23,8 +23,8 @@ The following pages will be created for each:
     -   [] Freelancer 1
     -   [] Freelancer 2
 -   Contact Us (w/FAQ)
-    -   [] Small business
-    -   [] Freelancer
+    -   [x] Small business
+    -   [x] Freelancer
 
 There should be at least 2-3 templates for each of these pages.
 
