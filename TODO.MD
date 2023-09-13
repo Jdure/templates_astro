@@ -15,7 +15,7 @@ The following pages will be created for each:
     -   [x] Freelancer 1
     -   [x] Freelancer 2 (w/Testimonials)
 -   Services
-    -   [] Small business
+    -   [x] Small business
     -   [] Freelancer
 -   Portfolio / Gallery
     -   [] Small business 1
