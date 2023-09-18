@@ -1,11 +1,67 @@
 ---
 import Layout from '../layouts/Layout.astro'
 
+const services = {
+    services: [
+        {
+            title: 'Business Consulting Services',
+            description:
+                "Navigate your business journey with expert guidance. Our business consulting services offer tailored solutions to address your challenges and seize opportunities. From strategic planning to process optimization, we're here to help you make informed decisions that drive growth and success.",
+        },
+        {
+            title: 'Social Media Management',
+            description:
+                "Elevate your online presence effortlessly. Our social media management services empower you to connect with your audience on platforms that matter most. We'll curate engaging content, schedule posts, and interact with followers to build a vibrant online community around your brand.",
+        },
+        {
+            title: 'Graphic Design and Branding',
+            description:
+                'Capture attention and build recognition. Our graphic design and branding services create visually appealing assets that align with your business identity. From logos to marketing materials, we ensure your brand stands out and communicates its core values consistently.',
+        },
+        {
+            title: 'Website Setup and Optimization',
+            description:
+                "Establish a strong digital foundation. Our website setup and optimization services create professional, user-friendly websites that cater to your target audience. Whether you're launching your first site or refining an existing one, we ensure your online platform reflects your business effectively.",
+        },
+        {
+            title: 'Bookkeeping and Financial Management',
+            description:
+                'Stay on top of your finances with ease. Our bookkeeping and financial management services help you maintain accurate records, manage expenses, and plan for financial growth. By taking care of the numbers, we allow you to focus on what you do best – running your business.',
+        },
+        {
+            title: 'Local SEO and Online Visibility',
+            description:
+                "Be found by those who matter most. Our local SEO services ensure your business appears in relevant online searches within your community. We'll optimize your online profiles, manage reviews, and implement strategies that drive local customers through your doors.",
+        },
+    ],
+}
+
 ---
 
 <Layout title="Services">
 <!-- CTA SECTION -->
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex items-center md:flex-row flex-col">
+    <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
+      <h1 class="text-xs text-gray-500 tracking-widest font-medium title-font mb-1 uppercase">Service</h1>
+      <h2 class="md:text-3xl text-2xl font-medium title-font text-gray-900 capitalize">Elevating your experience</h2>
+    </div>
+  </div>
+</section>
 <!-- SERVICES w/IMAGES -->
+<div class="flex flex-wrap -m-4">
+      { services.services.map((data) => (
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{data.title}</h2>
+          <p class="leading-relaxed text-base">{data.description}</p>
+        </div>
+      </div>
+      ))}
+    </div>
+</div>
 <!-- CUSTOM ORDER -->
 <!-- FAQ -->
 </Layout>
