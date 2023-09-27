@@ -18,9 +18,9 @@ The following pages will be created for each:
     -   [x] Small business
     -   [x] Freelancer
 -   Portfolio / Gallery
-    -   [] Small business 1
+    -   [x] Small business 1
     -   [] Small business 2
-    -   [] Freelancer 1
+    -   [x] Freelancer 1
     -   [] Freelancer 2
 -   Contact Us (w/FAQ)
     -   [x] Small business
