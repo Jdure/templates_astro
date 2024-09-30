@@ -16,8 +16,12 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
+.local.env
 
 # macOS-specific files
 .DS_Store
 src/pages/index.astro
 .vscode/settings.json
+
+#API
+test.http
