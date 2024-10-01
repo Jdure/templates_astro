@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { FetchAllProducts } from '../utils/fetch'
+
+const apiEndpoint = import.meta.env.STORE_URL
+const consumerKey = import.meta.env.CONSUMER_KEY
+const secretKey = import.meta.env.CONSUMER_SECRET
+
+const products = FetchAllProducts(apiEndpoint, consumerKey, secretKey)
+---
+
+<Layout title="Home">
+    <h1>Hello World</h1>
+</Layout>

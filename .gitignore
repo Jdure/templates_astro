@@ -16,7 +16,7 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
-.local.env
+.env.local
 
 # macOS-specific files
 .DS_Store
@@ -25,3 +25,8 @@ src/pages/index.astro
 
 #API
 test.http
+
+##CERTS
+certs/
+localhost-key.pem
+localhost.pem
