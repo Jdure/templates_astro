@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro'
+import PocketBase from 'pocketbase'
+
+const pb = new PocketBase(import.meta.env.PB_TEMP_URL)
+
+const products = await pb.collection('products').getFullList({
+    sort: '-created',
+})
+
+console.log(products)
+---
+
+<Layout title="Products">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="items-center sm:flex sm:items-center sm:justify-between">
+            <div class="text-center sm:text-left">
+                <h1 class="text-3xl font-bold capitalize sm:text-4xl">
+                    Our Products
+                </h1>
+                <div
+                    class="mt-2 flex flex-row justify-center space-x-4 text-lg text-gray-500 sm:space-x-8 sm:text-lg md:text-xl lg:text-2xl"
+                >
+                    <p>Marketing</p>
+                    <p>Branding</p>
+                    <p>Inspiring</p>
+                </div>
+            </div>
+
+            <div
+                class="mt-4 hidden gap-4 sm:mr-4 sm:mt-0 sm:flex sm:w-5 sm:flex-row sm:items-center"
+            >
+                <input
+                    class="transition duration-300 hover:scale-150"
+                    type="image"
+                    src="instagram.svg"
+                    alt="Instragram"
+                />
+                <input
+                    class="transition duration-300 hover:scale-150"
+                    type="image"
+                    src="tiktok.svg"
+                    alt="Tik Tok"
+                />
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-4 gap-4">
+        {
+            products.map((product) => (
+                <div>
+                    <a href="#" class="group block">
+                        <img
+                            src={`${import.meta.env.PB_TEMP_URL_API}/${
+                                product.collectionId
+                            }/${product.id}/${product.image}`}
+                            alt={product.name}
+                            class="aspect-square w-full rounded object-cover transition duration-300 hover:scale-75"
+                        />
+
+                        <div class="mt-3 text-center">
+                            <h3 class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
+                                {product.name}
+                            </h3>
+
+                            <p class="mt-1 text-sm text-gray-700">
+                                {product.price}
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            ))
+        }
+    </div>
+</Layout>
